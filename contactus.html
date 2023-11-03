@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="styles/style.css">
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="img\River.jpg" alt="RiverRush">
+        </a>
+        <nav>
+            <a href="https://cadu1709.github.io/W05-Assignment/index2.html" target="_blank">Home</a>
+            <a href="https://cadu1709.github.io/RiverRush/Site-plan-rafting.html" target="_blank">Site Plan</a>
+            <a href="https://cadu1709.github.io/about-me/" target="_blank">About</a>
+            <a href="mailto:caduduty@yahoo.com.br" target="_blank">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+				<div id="feedback"></div>
+                <form id="contact-form">
+                    <input type="text" class="field" placeholder="Your Name" name="user_name" required>
+                    <input type="email" class="field" placeholder="Your Email" name="user_email" required>
+                    <input type="text" class="field" placeholder="Subject" name="subject" required>
+                    <textarea placeholder="Message" class="field" name="user_message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+ 
+    </div>
+
+    <section class="msg">
+        <h2>More Than Just The Thrill</h2>
+        <p>Ready to experience the thrill of a lifetime on a breathtaking rafting journey? Don't hesitate to get in touch with us to book your adventure. Whether you're an avid explorer seeking the ultimate rush or a nature lover yearning to immerse yourself in stunning landscapes, our rafting rides offer the perfect blend of excitement and natural wonder. Contact us today and let's embark on an unforgettable journey together.</p>
+    </section>
+
+    <main class="home-grid">
+        <section class="rivers-card">
+            <img class="hero" src="img\hero_transparency_1024.png" alt="hero">
+        </section>
+    </main>
+
+    <footer>
+        <p>River Rush&copy;2023-Carlos Silva</p>
+        <p><a href="https://cadu1709.github.io/W05-Assignment/index2.html" target="_blank">Home</a></p>
+        <p><a href="https://cadu1709.github.io/RiverRush/Site-plan-rafting.html" target="_blank">Site</a></p>
+        <p><a href="https://cadu1709.github.io/about-me/" target="_blank">About</a></p>
+        <p><a href="mailto:caduduty@yahoo.com.br" target="_blank">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="img\facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="img\twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="img\instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript code for form handling (as provided in your initial question)
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.getElementById('contact-form');
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
